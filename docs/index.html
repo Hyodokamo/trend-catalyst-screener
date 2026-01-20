@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Trend×Catalyst Screener</title>
+<style>
+body { font-family: -apple-system, Segoe UI, Roboto, Helvetica, Arial; margin: 20px; }
+h1 { margin: 0 0 8px; }
+pre { background: #f7f7f7; padding: 10px; overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; }
+th, td { border: 1px solid #ddd; padding: 6px 8px; font-size: 13px; }
+th { background: #f6f6f6; text-align: left; }
+</style>
+</head>
+<body>
+<h1>Trend×Catalyst Screener</h1>
+<p><a href="screen_latest.csv">Download CSV</a></p>
+<pre>{
+  "ts_utc": "2026-01-20T13:16:20.237049+00:00",
+  "mode": "initial",
+  "period": "600d",
+  "saved": 996,
+  "missing_fetch": 0,
+  "healthy": 996,
+  "missing_real": 0,
+  "deleted_empty": 0,
+  "us_index_ok": true,
+  "jp_index_ok": true
+}</pre>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>date</th>
+      <th>ticker</th>
+      <th>close</th>
+      <th>rvol</th>
+      <th>close_loc</th>
+      <th>ma10_ok</th>
+      <th>ma200_ok</th>
+      <th>breakout20_ok</th>
+      <th>near_breakout_ok</th>
+      <th>passed</th>
+      <th>score</th>
+      <th>market</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2026-01-16</td>
+      <td>WMT</td>
+      <td>119.699997</td>
+      <td>18.256182</td>
+      <td>0.756756</td>
+      <td>True</td>
+      <td>True</td>
+      <td>False</td>
+      <td>True</td>
+      <td>True</td>
+      <td>6</td>
+      <td>US</td>
+    </tr>
+    <tr>
+      <td>2026-01-20</td>
+      <td>2871.T</td>
+      <td>1948.000000</td>
+      <td>5.474497</td>
+      <td>1.000000</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>6</td>
+      <td>JP</td>
+    </tr>
+    <tr>
+      <td>2026-01-16</td>
+      <td>PPG</td>
+      <td>110.220001</td>
+      <td>3.432214</td>
+      <td>0.766872</td>
+      <td>True</td>
+      <td>True</td>
+      <td>False</td>
+      <td>True</td>
+      <td>True</td>
+      <td>6</td>
+      <td>US</td>
+    </tr>
+    <tr>
+      <td>2026-01-20</td>
+      <td>2802.T</td>
+      <td>3722.000000</td>
+      <td>2.762732</td>
+      <td>0.796610</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>6</td>
+      <td>JP</td>
+    </tr>
+    <tr>
+      <td>2026-01-16</td>
+      <td>PPL</td>
+      <td>36.830002</td>
+      <td>2.715665</td>
+      <td>0.940596</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>6</td>
+      <td>US</td>
+    </tr>
+    <tr>
+      <td>2026-01-16</td>
+      <td>EXC</td>
+      <td>44.730000</td>
+      <td>2.393283</td>
+      <td>0.880000</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>6</td>
+      <td>US</td>
+    </tr>
+    <tr>
+      <td>2026-01-20</td>
+      <td>2897.T</td>
+      <td>3163.000000</td>
+      <td>2.225311</td>
+      <td>0.967742</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>6</td>
+      <td>JP</td>
+    </tr>
+    <tr>
+      <td>2026-01-20</td>
+      <td>7532.T</td>
+      <td>972.799988</td>
+      <td>2.200624</td>
+      <td>0.796645</td>
+      <td>True</td>
+      <td>True</td>
+      <td>False</td>
+      <td>True</td>
+      <td>True</td>
+      <td>6</td>
+      <td>JP</td>
+    </tr>
+    <tr>
+      <td>2026-01-16</td>
+      <td>FE</td>
+      <td>47.340000</td>
+      <td>2.109742</td>
+      <td>0.957446</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>6</td>
+      <td>US</td>
+    </tr>
+    <tr>
+      <td>2026-01-16</td>
+      <td>TDY</td>
+      <td>581.719971</td>
+      <td>2.106017</td>
+      <td>0.921645</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>6</td>
+      <td>US</td>
+    </tr>
+    <tr>
+      <td>2026-01-20</td>
+      <td>1333.T</td>
+      <td>1428.000000</td>
+      <td>2.043973</td>
+      <td>0.890411</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>6</td>
+      <td>JP</td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>

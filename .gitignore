@@ -1,0 +1,14 @@
+﻿__pycache__/
+*.pyc
+.venv/
+.env
+
+out/
+*.log
+
+# DO NOT COMMIT PRICE DATA
+data/prices/
+data/prices/*.parquet
+
+.DS_Store
+Thumbs.db

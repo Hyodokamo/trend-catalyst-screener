@@ -1,0 +1,5 @@
+﻿pandas>=2.1
+numpy>=1.26
+yfinance>=0.2.40
+requests>=2.31
+pyarrow>=14.0
