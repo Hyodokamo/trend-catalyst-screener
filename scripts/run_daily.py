@@ -42,7 +42,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--initial", action="store_true", help="force initial(600d) build")
     ap.add_argument("--period-initial", default="600d")
-    ap.add_argument("--period-daily", default="60d")
+    ap.add_argument("--period-daily", default="30d")
     args = ap.parse_args()
 
     ensure_dirs()
