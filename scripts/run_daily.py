@@ -2,6 +2,8 @@
 import argparse
 from datetime import datetime, timezone
 import pandas as pd
+from src.prices import fetch_ohlcv_batch_retry, upsert_parquet
+import time
 
 from src.config import (
     ensure_dirs, PRICES_DIR, OUTPUTS_DIR, DOCS_DIR,
@@ -113,3 +115,28 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+def daily_update_parquets_safe(tickers, prices_dir, period="30d", batch_size=20, max_rows=1200, sleep_between_batches=2.0):
+    saved, missing = [], []
+
+    # 1) 指数を先に（地合いが死ぬと全スクリーニングが腐る）
+    for idx in ["^GSPC", "1306.T"]:
+        got = fetch_ohlcv_batch_retry([idx], period=period)
+        if idx in got:
+            upsert_parquet(idx, got[idx], prices_dir, max_rows=max_rows)
+
+    # 2) 銘柄
+    for i in range(0, len(tickers), batch_size):
+        batch = tickers[i:i+batch_size]
+
+        got = fetch_ohlcv_batch_retry(batch, period=period)
+        for t in batch:
+            if t not in got:
+                missing.append(t)
+                continue
+            upsert_parquet(t, got[t], prices_dir, max_rows=max_rows)
+            saved.append(t)
+
+        time.sleep(sleep_between_batches)
+
+    return saved, missing
