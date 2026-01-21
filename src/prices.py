@@ -2,6 +2,9 @@
 from pathlib import Path
 import pandas as pd
 import yfinance as yf
+import time
+import random
+from typing import Dict
 
 FIELDS = ["Open", "High", "Low", "Close", "Volume"]
 
@@ -103,3 +106,35 @@ def bulk_update(tickers: list[str], prices_dir: Path, period: str, batch_size=80
             upsert_parquet(t, got[t], prices_dir, max_rows=max_rows)
             saved.append(t)
     return saved, missing
+
+def fetch_ohlcv_batch_retry(
+    tickers: list[str],
+    period: str = "30d",
+    interval: str = "1d",
+    max_retries: int = 4,
+    base_sleep: float = 2.0,
+    jitter: float = 1.0,
+) -> Dict[str, pd.DataFrame]:
+    """
+    fetch_ohlcv_batch をリトライ付きで呼ぶ。
+    - RateLimit / 一時障害を想定
+    - 失敗時は指数も含めて落ちるので、ここで吸収する
+    """
+    last = {}
+    for attempt in range(max_retries + 1):
+        try:
+            out = fetch_ohlcv_batch(tickers, period=period, interval=interval)
+            # outが空なら一時障害扱いでリトライ
+            if out:
+                return out
+            last = out
+        except Exception:
+            # yfinanceがRateLimit時に例外を投げるケースもある
+            pass
+
+        if attempt < max_retries:
+            # 指数や人気銘柄は集中しやすいので、指数ほど待つ価値がある
+            sleep_s = base_sleep * (2 ** attempt) + random.uniform(0, jitter)
+            time.sleep(sleep_s)
+
+    return last
