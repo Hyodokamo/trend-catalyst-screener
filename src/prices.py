@@ -18,7 +18,7 @@ def fetch_ohlcv_batch(tickers, period="60d", interval="1d") -> dict[str, pd.Data
         interval=interval,
         auto_adjust=False,
         group_by="ticker",
-        threads=True,
+        threads=False,
         progress=False,
     )
     out: dict[str, pd.DataFrame] = {}
