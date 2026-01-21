@@ -16,7 +16,7 @@ EXCLUDE = DATA_DIR / "universe_exclude.csv"
 TOO_SHORT = DATA_DIR / "universe_too_short.csv"
 
 MIN_ROWS = 260
-BATCH_SIZE = 80
+BATCH_SIZE = 20
 MAX_ROWS_KEEP = 1200
 
 def ensure_dirs() -> None:
