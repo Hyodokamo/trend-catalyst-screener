@@ -85,7 +85,7 @@ def main():
     jp_ok = market_filter_ok(PRICES_DIR, JP_INDEX_TICKER, ma_days=50)
 
     params = ScreenParams()
-    screen_df = run_screen(PRICES_DIR, us, jp, params, us_ok, jp_ok)
+    screen_df = run_screen(us, jp, params)
 
     out_csv = OUTPUTS_DIR / "screen_latest.csv"
     out_audit = OUTPUTS_DIR / "audit_latest.csv"
