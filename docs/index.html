@@ -17,15 +17,15 @@ th { background: #f6f6f6; text-align: left; }
 <h1>Trend×Catalyst Screener</h1>
 <p><a href="screen_latest.csv">Download CSV</a></p>
 <pre>{
-  "ts_utc": "2026-01-20T22:40:11.377001+00:00",
+  "ts_utc": "2026-01-27T13:49:07.791789+00:00",
   "mode": "daily",
-  "period": "60d",
+  "period": "30d",
   "saved": 996,
   "missing_fetch": 0,
   "healthy": 996,
   "missing_real": 0,
   "deleted_empty": 0,
-  "us_index_ok": false,
+  "us_index_ok": true,
   "jp_index_ok": true
 }</pre>
 <table border="1" class="dataframe">
@@ -42,79 +42,130 @@ th { background: #f6f6f6; text-align: left; }
       <th>near_breakout_ok</th>
       <th>passed</th>
       <th>score</th>
+      <th>proxy_score</th>
+      <th>score_total</th>
+      <th>prev_close</th>
+      <th>gap_pct</th>
+      <th>tr</th>
+      <th>atr20_prev</th>
+      <th>tr_ratio</th>
+      <th>gap_score</th>
+      <th>tr_score</th>
+      <th>exhaust_flag</th>
+      <th>exhaust_reason</th>
+      <th>split_suspect</th>
       <th>market</th>
+      <th>index_ok</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>2026-01-20</td>
-      <td>2871.T</td>
-      <td>1948.000000</td>
-      <td>5.474497</td>
-      <td>1.000000</td>
+      <td>2026-01-27</td>
+      <td>2206.T</td>
+      <td>5904.000000</td>
+      <td>7.664882</td>
+      <td>0.701252</td>
       <td>True</td>
       <td>True</td>
       <td>True</td>
       <td>True</td>
       <td>True</td>
       <td>6</td>
-      <td>JP</td>
-    </tr>
-    <tr>
-      <td>2026-01-20</td>
-      <td>2802.T</td>
-      <td>3722.000000</td>
-      <td>2.762732</td>
-      <td>0.796610</td>
-      <td>True</td>
-      <td>True</td>
-      <td>True</td>
-      <td>True</td>
-      <td>True</td>
-      <td>6</td>
-      <td>JP</td>
-    </tr>
-    <tr>
-      <td>2026-01-20</td>
-      <td>2897.T</td>
-      <td>3163.000000</td>
-      <td>2.225311</td>
-      <td>0.967742</td>
-      <td>True</td>
-      <td>True</td>
-      <td>True</td>
-      <td>True</td>
-      <td>True</td>
-      <td>6</td>
-      <td>JP</td>
-    </tr>
-    <tr>
-      <td>2026-01-20</td>
-      <td>7532.T</td>
-      <td>972.799988</td>
-      <td>2.200624</td>
-      <td>0.796645</td>
-      <td>True</td>
-      <td>True</td>
+      <td>2</td>
+      <td>8</td>
+      <td>5428.000000</td>
+      <td>0.018423</td>
+      <td>643.000000</td>
+      <td>88.5500</td>
+      <td>7.261434</td>
+      <td>0</td>
+      <td>2</td>
       <td>False</td>
-      <td>True</td>
-      <td>True</td>
-      <td>6</td>
+      <td></td>
+      <td>False</td>
       <td>JP</td>
+      <td>True</td>
     </tr>
     <tr>
-      <td>2026-01-20</td>
-      <td>1333.T</td>
-      <td>1428.000000</td>
-      <td>2.043973</td>
-      <td>0.890411</td>
+      <td>2026-01-27</td>
+      <td>1332.T</td>
+      <td>1303.500000</td>
+      <td>2.802470</td>
+      <td>0.957447</td>
       <td>True</td>
       <td>True</td>
       <td>True</td>
       <td>True</td>
       <td>True</td>
       <td>6</td>
+      <td>2</td>
+      <td>8</td>
+      <td>1248.000000</td>
+      <td>0.008814</td>
+      <td>57.500000</td>
+      <td>21.1000</td>
+      <td>2.725118</td>
+      <td>0</td>
+      <td>2</td>
+      <td>False</td>
+      <td></td>
+      <td>False</td>
       <td>JP</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>2026-01-26</td>
+      <td>BKR</td>
+      <td>56.290001</td>
+      <td>2.241139</td>
+      <td>0.710146</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>6</td>
+      <td>2</td>
+      <td>8</td>
+      <td>53.919998</td>
+      <td>0.032085</td>
+      <td>2.970001</td>
+      <td>1.4565</td>
+      <td>2.039136</td>
+      <td>1</td>
+      <td>1</td>
+      <td>False</td>
+      <td></td>
+      <td>False</td>
+      <td>US</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>2026-01-27</td>
+      <td>4401.T</td>
+      <td>4619.000000</td>
+      <td>2.100476</td>
+      <td>0.900000</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>6</td>
+      <td>1</td>
+      <td>7</td>
+      <td>4429.000000</td>
+      <td>0.008128</td>
+      <td>220.000000</td>
+      <td>88.7000</td>
+      <td>2.480271</td>
+      <td>0</td>
+      <td>1</td>
+      <td>False</td>
+      <td></td>
+      <td>False</td>
+      <td>JP</td>
+      <td>True</td>
     </tr>
   </tbody>
 </table>
