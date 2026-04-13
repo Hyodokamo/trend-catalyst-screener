@@ -1,2 +1,1 @@
 date,ticker,close,rvol,close_loc,ma10_ok,ma200_ok,breakout20_ok,near_breakout_ok,passed,score,proxy_score,score_total,prev_close,gap_pct,tr,atr20_prev,tr_ratio,gap_score,tr_score,exhaust_flag,exhaust_reason,split_suspect,market,index_ok
-2026-04-10,FRT,109.05000305175781,2.3458858100034874,0.9946837651928657,True,True,True,True,True,6,0,6,107.38999938964844,0.00037248268697909204,1.8799972534179688,1.9034988403320312,0.9876534797835952,0,0,False,,False,US,True
