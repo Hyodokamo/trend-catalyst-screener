@@ -1,2 +1,1 @@
 date,ticker,close,rvol,close_loc,ma10_ok,ma200_ok,breakout20_ok,near_breakout_ok,passed,score,proxy_score,score_total,prev_close,gap_pct,tr,atr20_prev,tr_ratio,gap_score,tr_score,exhaust_flag,exhaust_reason,split_suspect,market,index_ok
-2026-04-17,CINF,166.82000732421875,3.6996267059931136,0.8150692567096792,True,True,True,True,True,6,0,6,163.36000061035156,0.00018363601361892634,4.3800048828125,2.9675010681152343,1.4759910046449949,0,0,False,,False,US,True
