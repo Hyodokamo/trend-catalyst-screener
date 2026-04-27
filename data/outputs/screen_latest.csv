@@ -1,3 +1,1 @@
 date,ticker,close,rvol,close_loc,ma10_ok,ma200_ok,breakout20_ok,near_breakout_ok,passed,score,proxy_score,score_total,prev_close,gap_pct,tr,atr20_prev,tr_ratio,gap_score,tr_score,exhaust_flag,exhaust_reason,split_suspect,market,index_ok
-2026-04-24,AMD,347.80999755859375,2.202280812284305,0.7192413107519572,True,True,True,True,True,6,4,10,305.3299865722656,0.10293788548646376,47.660003662109375,11.422999572753906,4.172284465088122,2,2,False,,False,US,True
-2026-04-24,EW,84.1500015258789,2.335595461512691,0.7748101383776732,True,True,True,True,True,6,2,8,79.72000122070312,0.034872036336282886,5.019996643066406,2.141499710083008,2.3441500456107103,1,1,False,,False,US,True
