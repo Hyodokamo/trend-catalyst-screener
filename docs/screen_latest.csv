@@ -1,2 +1,1 @@
 date,ticker,close,rvol,close_loc,ma10_ok,ma200_ok,breakout20_ok,near_breakout_ok,passed,score,proxy_score,score_total,prev_close,gap_pct,tr,atr20_prev,tr_ratio,gap_score,tr_score,exhaust_flag,exhaust_reason,split_suspect,market,index_ok
-2026-05-11,FOXA,67.72000122070312,2.56504250223078,0.9282511747730425,True,True,True,True,True,6,3,9,62.939998626708984,0.035907187334671464,5.100002288818359,1.4593492507934571,3.4947099099447625,1,2,False,,False,US,True
