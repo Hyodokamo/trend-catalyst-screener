@@ -1,1 +1,2 @@
 date,ticker,close,rvol,close_loc,ma10_ok,ma200_ok,breakout20_ok,near_breakout_ok,passed,score,proxy_score,score_total,prev_close,gap_pct,tr,atr20_prev,tr_ratio,gap_score,tr_score,exhaust_flag,exhaust_reason,split_suspect,market,index_ok
+2026-05-27,NTAP,142.74000549316406,2.2648484650391936,0.8161638455871246,True,True,True,True,True,6,0,6,138.9499969482422,0.0038863516141207644,4.9499969482421875,4.584500503540039,1.0797243766076414,0,0,False,,False,US,True
