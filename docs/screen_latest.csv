@@ -1,1 +1,2 @@
 date,ticker,close,rvol,close_loc,ma10_ok,ma200_ok,breakout20_ok,near_breakout_ok,passed,score,proxy_score,score_total,prev_close,gap_pct,tr,atr20_prev,tr_ratio,gap_score,tr_score,exhaust_flag,exhaust_reason,split_suspect,market,index_ok
+2026-06-04,BEN,31.969999313354492,2.027097648411724,0.7460311533396239,True,True,False,True,True,6,2,8,30.3700008392334,0.010207423687058625,2.0799999237060547,0.7735000610351562,2.689075319428471,0,2,False,,False,US,True
