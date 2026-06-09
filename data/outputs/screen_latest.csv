@@ -1,1 +1,2 @@
 date,ticker,close,rvol,close_loc,ma10_ok,ma200_ok,breakout20_ok,near_breakout_ok,passed,score,proxy_score,score_total,prev_close,gap_pct,tr,atr20_prev,tr_ratio,gap_score,tr_score,exhaust_flag,exhaust_reason,split_suspect,market,index_ok
+2026-06-09,SJM,112.38999938964844,2.5325066093233017,0.7084652940660002,True,True,True,True,True,6,3,9,101.7699966430664,0.05099737263045134,13.457305908203125,2.546500015258789,5.284628245657215,1,2,False,,False,US,True
