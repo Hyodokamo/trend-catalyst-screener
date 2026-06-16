@@ -1,3 +1,2 @@
 date,ticker,close,rvol,close_loc,ma10_ok,ma200_ok,breakout20_ok,near_breakout_ok,passed,score,proxy_score,score_total,prev_close,gap_pct,tr,atr20_prev,tr_ratio,gap_score,tr_score,exhaust_flag,exhaust_reason,split_suspect,market,index_ok
-2026-06-12,6146.T,79900.0,2.0820230682745593,0.9705449189985272,True,True,True,True,True,6,3,9,70030.0,0.053120091389404545,10070.0,3971.0,2.535885167464115,1,2,False,,False,JP,True
-2026-06-12,8233.T,2129.0,2.4226634051993856,0.968,True,True,False,True,True,6,0,6,2057.0,0.017258142926592113,74.0,53.025,1.3955681282413956,0,0,False,,False,JP,True
+2026-06-15,6146.T,85250.0,2.413126291590243,0.843585237258348,True,True,True,True,True,6,1,7,79900.0,0.034418022528160286,6240.0,4113.5,1.5169563631943601,1,0,False,,False,JP,True
