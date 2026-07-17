@@ -1,3 +1,1 @@
 date,ticker,close,rvol,close_loc,ma10_ok,ma200_ok,breakout20_ok,near_breakout_ok,passed,score,proxy_score,score_total,prev_close,gap_pct,tr,atr20_prev,tr_ratio,gap_score,tr_score,exhaust_flag,exhaust_reason,split_suspect,market,index_ok
-2026-07-16,JBHT,298.4100036621094,2.341372649091594,0.8961933412804941,True,True,True,True,True,6,4,10,276.2799987792969,0.07119593714580663,23.480010986328125,8.811502075195312,2.664700159627174,2,2,False,,False,US,True
-2026-07-16,6951.T,8660.0,2.67227557742678,0.7422037422037422,True,True,True,True,True,6,0,6,8418.0,0.005464480874316946,481.0,324.8,1.4809113300492611,0,0,False,,False,JP,True
