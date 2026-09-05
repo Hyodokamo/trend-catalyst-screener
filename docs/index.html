@@ -17,17 +17,103 @@ th { background: #f6f6f6; text-align: left; }
 <h1>Trend×Catalyst Screener</h1>
 <p><a href="screen_latest.csv">Download CSV</a></p>
 <pre>{
-  "ts_utc": "2026-09-04T00:12:13.213999+00:00",
+  "ts_utc": "2026-09-05T00:11:16.902364+00:00",
   "mode": "daily",
   "period": "30d",
-  "saved": 975,
+  "saved": 985,
   "missing_fetch": 0,
   "healthy": 965,
-  "missing_real": 10,
+  "missing_real": 20,
   "deleted_empty": 0,
   "us_index_ok": true,
   "jp_index_ok": true
 }</pre>
-<p>No candidates</p>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>date</th>
+      <th>ticker</th>
+      <th>close</th>
+      <th>rvol</th>
+      <th>close_loc</th>
+      <th>ma10_ok</th>
+      <th>ma200_ok</th>
+      <th>breakout20_ok</th>
+      <th>near_breakout_ok</th>
+      <th>passed</th>
+      <th>score</th>
+      <th>proxy_score</th>
+      <th>score_total</th>
+      <th>prev_close</th>
+      <th>gap_pct</th>
+      <th>tr</th>
+      <th>atr20_prev</th>
+      <th>tr_ratio</th>
+      <th>gap_score</th>
+      <th>tr_score</th>
+      <th>exhaust_flag</th>
+      <th>exhaust_reason</th>
+      <th>split_suspect</th>
+      <th>market</th>
+      <th>index_ok</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2026-09-04</td>
+      <td>2531.T</td>
+      <td>2457.500000</td>
+      <td>2.422803</td>
+      <td>1.000000</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>6</td>
+      <td>2</td>
+      <td>8</td>
+      <td>2265.000000</td>
+      <td>0.011038</td>
+      <td>192.500000</td>
+      <td>68.350000</td>
+      <td>2.816386</td>
+      <td>0</td>
+      <td>2</td>
+      <td>False</td>
+      <td></td>
+      <td>False</td>
+      <td>JP</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>2026-09-03</td>
+      <td>DELL</td>
+      <td>516.390015</td>
+      <td>2.780010</td>
+      <td>0.725748</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>6</td>
+      <td>1</td>
+      <td>7</td>
+      <td>492.200012</td>
+      <td>-0.011967</td>
+      <td>52.470032</td>
+      <td>29.110498</td>
+      <td>1.802444</td>
+      <td>0</td>
+      <td>1</td>
+      <td>False</td>
+      <td></td>
+      <td>False</td>
+      <td>US</td>
+      <td>True</td>
+    </tr>
+  </tbody>
+</table>
 </body>
 </html>
