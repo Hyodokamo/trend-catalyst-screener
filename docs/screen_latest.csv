@@ -1,3 +1,2 @@
 date,ticker,close,rvol,close_loc,ma10_ok,ma200_ok,breakout20_ok,near_breakout_ok,passed,score,proxy_score,score_total,prev_close,gap_pct,tr,atr20_prev,tr_ratio,gap_score,tr_score,exhaust_flag,exhaust_reason,split_suspect,market,index_ok
 2026-09-04,2531.T,2457.5,2.422803370171791,1.0,True,True,True,True,True,6,2,8,2265.0,0.011037527593819041,192.5,68.35,2.8163862472567667,0,2,False,,False,JP,True
-2026-09-03,DELL,516.3900146484375,2.7800095867115324,0.7257479332161565,True,True,True,True,True,6,1,7,492.20001220703125,-0.01196670967565927,52.47003173828125,29.110498046875,1.8024436288857615,0,1,False,,False,US,True
