@@ -1,2 +1,1 @@
 date,ticker,close,rvol,close_loc,ma10_ok,ma200_ok,breakout20_ok,near_breakout_ok,passed,score,proxy_score,score_total,prev_close,gap_pct,tr,atr20_prev,tr_ratio,gap_score,tr_score,exhaust_flag,exhaust_reason,split_suspect,market,index_ok
-2026-09-21,WBD,30.799999237060547,12.510048219697557,0.9055111842678337,True,True,True,True,True,6,4,10,27.799999237060547,0.07050363473421917,3.1200008392333984,0.32450056076049805,9.6147779588466,2,2,False,,False,US,True
